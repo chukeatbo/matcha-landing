@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Facebook, Instagram } from 'lucide-svelte';
+	import { Instagram } from 'lucide-svelte';
 
 	const year = new Date().getFullYear();
 </script>
@@ -15,13 +15,17 @@
 
 		<div class="flex gap-4 text-muted-foreground">
 			<a
-				href="#contact"
-				aria-label="Facebook"
+				href="https://www.tiktok.com/@tcatmatchahouse"
+				aria-label="TikTok"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="transition-colors hover:text-primary"
 			>
-				<Facebook class="h-5 w-5" />
+				<svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+					<path
+						d="M16.5 2h-3v13.2a2.8 2.8 0 1 1-2-2.68V9.4a5.8 5.8 0 1 0 5 5.75V8.8a7.7 7.7 0 0 0 4.5 1.45V7.25A4.8 4.8 0 0 1 16.5 2Z"
+					/>
+				</svg>
 			</a>
 			<a
 				href="https://www.instagram.com/t_cat.matcha/"
