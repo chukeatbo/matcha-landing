@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
 	import { MapPin, Clock, Mail } from 'lucide-svelte';
+	import DeliveryButtons from '$lib/components/delivery-buttons.svelte';
 </script>
 
 <section id="contact" class="py-20 md:py-28">
@@ -38,10 +39,13 @@
 			</div>
 		</div>
 
-		<div class="flex min-h-[280px] flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-border bg-secondary/40 p-6 text-center text-sm text-muted-foreground">
+		<div class="flex min-h-[280px] flex-col items-center justify-center gap-4 rounded-2xl border border-dashed border-border bg-secondary/40 p-6 text-center">
 			<span class="text-3xl">🐾</span>
-			<p class="font-medium text-foreground">หน้าร้านกำลังจะเปิดเร็ว ๆ นี้</p>
-			<p>ติดตามอัปเดตสาขาได้ทางช่องทางติดต่อของเรา</p>
+			<div class="text-sm text-muted-foreground">
+				<p class="font-medium text-foreground">หน้าร้านกำลังจะเปิดเร็ว ๆ นี้</p>
+				<p>ระหว่างนี้สั่งเดลิเวอรี่ได้เลยผ่านแอปด้านล่าง</p>
+			</div>
+			<DeliveryButtons />
 		</div>
 	</div>
 </section>

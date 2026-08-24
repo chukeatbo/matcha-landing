@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Menu, X } from 'lucide-svelte';
+	import { handleAnchorClick } from '$lib/scroll-to';
 
 	let open = false;
 
@@ -14,7 +15,11 @@
 
 <header class="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur">
 	<div class="container flex h-24 items-center justify-between">
-		<a href="#top" class="flex items-center gap-3 font-serif text-lg font-semibold text-primary">
+		<a
+			href="#top"
+			on:click={handleAnchorClick}
+			class="flex items-center gap-3 font-serif text-lg font-semibold text-primary"
+		>
 			<span class="h-20 w-20 shrink-0 overflow-hidden rounded-full">
 				<img src="/logo.png" alt="T Cat Matcha House" class="h-full w-full scale-125 object-cover" />
 			</span>
@@ -23,7 +28,11 @@
 
 		<nav class="hidden items-center gap-8 md:flex">
 			{#each links as link}
-				<a href={link.href} class="text-sm font-medium text-foreground/80 transition-colors hover:text-primary">
+				<a
+					href={link.href}
+					on:click={handleAnchorClick}
+					class="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+				>
 					{link.label}
 				</a>
 			{/each}
@@ -49,7 +58,10 @@
 					<a
 						href={link.href}
 						class="rounded-md px-2 py-2 text-sm font-medium text-foreground/80 hover:bg-accent hover:text-primary"
-						on:click={() => (open = false)}
+						on:click={(e) => {
+							open = false;
+							handleAnchorClick(e);
+						}}
 					>
 						{link.label}
 					</a>

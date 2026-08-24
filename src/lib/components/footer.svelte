@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { Instagram } from 'lucide-svelte';
+	import { handleAnchorClick } from '$lib/scroll-to';
 
 	const year = new Date().getFullYear();
 </script>
 
 <footer class="border-t border-border bg-secondary/40">
 	<div class="container flex flex-col items-center justify-between gap-4 py-10 md:flex-row">
-		<a href="#top" class="flex items-center gap-2 font-serif text-lg font-semibold text-primary">
+		<a
+			href="#top"
+			on:click={handleAnchorClick}
+			class="flex items-center gap-2 font-serif text-lg font-semibold text-primary"
+		>
 			<img src="/logo.png" alt="T Cat Matcha House" class="h-10 w-10 rounded-full object-cover" />
 			T Cat Matcha House
 		</a>

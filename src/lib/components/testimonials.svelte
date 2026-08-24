@@ -4,12 +4,17 @@
 	const reviews = [
 		{
 			name: 'สุพิชญา ปิ่นทิพย์',
-			text: 'ปกติสั่งมัทฉะมะพร้าว วันนี้ลองสั่งน้ำผึ้งมะนาว อร่อยมากเลยค่ะ สดชื่นคนละแบบกับมะพร้าว หอมน้ำผึ้งก...',
+			text: 'ปกติสั่งมัทฉะมะพร้าว วันนี้ลองสั่งน้ำผึ้งมะนาว อร่อยมากเลยค่ะ สดชื่นคนละแบบกับมะพร้าว หอมน้ำผึ้งกลมกล่อมกับมัทฉะดีมาก ๆ เลยค่ะ🥹💓',
 			rating: 5
 		},
 		{
 			name: 'J',
 			text: 'ร้านน่ารักมาก มีขนมมีโน้ตแปะให้ รสชาติดีได้เป็นร้านประจำแน่นอนครับ',
+			rating: 5
+		},
+		{
+			name: 'Pin M.',
+			text: 'ร้านน่ารักมากค่ะ อร่อยมากด้วย ขอบคุณนะคะอุดหนุนอีกแน่นอนค่ะ',
 			rating: 5
 		}
 	];
@@ -35,7 +40,7 @@
 			<p class="mt-4 text-muted-foreground">ความประทับใจจริงจากลูกค้าที่แวะมาที่ร้าน</p>
 		</div>
 
-		<div class="mx-auto mt-12 grid max-w-3xl gap-6 sm:grid-cols-2">
+		<div class="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
 			{#each reviews as review}
 				<div class="rounded-2xl border border-border bg-card p-6 shadow-sm">
 					<p class="font-medium leading-relaxed text-foreground">{review.text}</p>

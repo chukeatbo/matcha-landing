@@ -8,6 +8,7 @@
 	import Contact from '$lib/components/contact.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import BackToTop from '$lib/components/back-to-top.svelte';
+	import StickyDeliveryBar from '$lib/components/sticky-delivery-bar.svelte';
 </script>
 
 <svelte:head>
@@ -25,3 +26,4 @@
 </main>
 <Footer />
 <BackToTop />
+<StickyDeliveryBar />

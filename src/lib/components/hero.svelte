@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
 	import { PawPrint } from 'lucide-svelte';
+	import { handleAnchorClick } from '$lib/scroll-to';
+	import DeliveryButtons from '$lib/components/delivery-buttons.svelte';
 </script>
 
 <section id="top" class="relative overflow-hidden">
@@ -30,7 +32,12 @@
 				</p>
 
 				<div class="flex flex-wrap gap-4">
-					<Button href="#contact" size="lg">แวะมาที่ร้าน</Button>
+					<Button href="#contact" on:click={handleAnchorClick} size="lg">แวะมาที่ร้าน</Button>
+				</div>
+
+				<div>
+					<p class="mb-2.5 text-sm font-medium text-muted-foreground">สั่งเดลิเวอรี่ได้เลย</p>
+					<DeliveryButtons />
 				</div>
 			</div>
 

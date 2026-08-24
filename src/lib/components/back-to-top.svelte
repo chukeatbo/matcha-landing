@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { scrollToY } from '$lib/scroll-to';
 
 	let visible = false;
 
@@ -13,7 +14,7 @@
 	});
 
 	function scrollToTop() {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
+		scrollToY(0);
 	}
 </script>
 
