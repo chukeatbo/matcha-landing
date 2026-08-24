@@ -13,39 +13,35 @@
 				<div class="flex gap-4">
 					<MapPin class="h-5 w-5 shrink-0 text-primary" />
 					<div>
-						<p class="font-medium">ที่อยู่ร้าน</p>
-						<p class="text-sm text-muted-foreground">
-							กรุงเทพฯ ประเทศไทย
-							<br />
-							<span class="italic">(ใส่ที่อยู่สาขาของคุณตรงนี้)</span>
-						</p>
+						<p class="font-medium">หน้าร้าน</p>
+						<p class="text-sm text-muted-foreground">ยังไม่เปิดหน้าร้าน — เร็ว ๆ นี้</p>
 					</div>
 				</div>
 				<div class="flex gap-4">
 					<Clock class="h-5 w-5 shrink-0 text-primary" />
 					<div>
 						<p class="font-medium">เวลาทำการ</p>
-						<p class="text-sm text-muted-foreground">
-							<span class="italic">(ใส่เวลาเปิด-ปิดร้านของคุณตรงนี้)</span>
-						</p>
+						<p class="text-sm text-muted-foreground">07:00 - 20:00 น.</p>
 					</div>
 				</div>
 				<div class="flex gap-4">
 					<Mail class="h-5 w-5 shrink-0 text-primary" />
 					<div>
 						<p class="font-medium">ติดต่อธุรกิจ</p>
-						<p class="text-sm text-muted-foreground">info@tcatmatcha.com</p>
+						<p class="text-sm text-muted-foreground">oranat57@gmail.com</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="mt-8">
-				<Button href="mailto:info@tcatmatcha.com" size="lg">ติดต่อสอบถาม</Button>
+				<Button href="mailto:oranat57@gmail.com" size="lg">ติดต่อสอบถาม</Button>
 			</div>
 		</div>
 
-		<div class="flex min-h-[280px] items-center justify-center rounded-2xl border border-dashed border-border bg-secondary/40 text-sm text-muted-foreground">
-			แผนที่ร้าน (แทรก Google Maps embed ของร้านคุณที่นี่)
+		<div class="flex min-h-[280px] flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-border bg-secondary/40 p-6 text-center text-sm text-muted-foreground">
+			<span class="text-3xl">🐾</span>
+			<p class="font-medium text-foreground">หน้าร้านกำลังจะเปิดเร็ว ๆ นี้</p>
+			<p>ติดตามอัปเดตสาขาได้ทางช่องทางติดต่อของเรา</p>
 		</div>
 	</div>
 </section>

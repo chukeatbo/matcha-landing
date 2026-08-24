@@ -14,14 +14,26 @@
 		<p class="text-sm text-muted-foreground">© {year} T Cat Matcha House. สงวนลิขสิทธิ์.</p>
 
 		<div class="flex gap-4 text-muted-foreground">
-			<a href="#contact" aria-label="Facebook" class="transition-colors hover:text-primary">
+			<a
+				href="#contact"
+				aria-label="Facebook"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="transition-colors hover:text-primary"
+			>
 				<Facebook class="h-5 w-5" />
 			</a>
-			<a href="https://www.instagram.com/t_cat.matcha/" aria-label="Instagram" class="transition-colors hover:text-primary">
+			<a
+				href="https://www.instagram.com/t_cat.matcha/"
+				aria-label="Instagram"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="transition-colors hover:text-primary"
+			>
 				<Instagram class="h-5 w-5" />
 			</a>
-			<a href="mailto:info@tcatmatcha.com" aria-label="Email" class="transition-colors hover:text-primary">
-				<span class="text-sm">info@tcatmatcha.com</span>
+			<a href="mailto:oranat57@gmail.com" aria-label="Email" class="transition-colors hover:text-primary">
+				<span class="text-sm">oranat57@gmail.com</span>
 			</a>
 		</div>
 	</div>
