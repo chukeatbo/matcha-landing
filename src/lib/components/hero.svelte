@@ -48,20 +48,18 @@
 			</dl>
 		</div>
 
-		<div class="relative flex items-center justify-center">
-			<div
-				class="aspect-square w-full max-w-md rounded-[2.5rem] bg-gradient-to-br from-primary/90 via-primary to-[hsl(84,45%,22%)] shadow-2xl shadow-primary/30"
-			>
-				<div class="flex h-full w-full items-center justify-center">
-					<div class="h-40 w-40 rounded-full bg-accent/90 blur-2xl md:h-56 md:w-56"></div>
-				</div>
-			</div>
-			<div
-				class="absolute -bottom-6 -left-6 rounded-2xl border border-border bg-card px-5 py-4 shadow-lg md:-left-10"
-			>
-				<p class="font-serif text-lg font-semibold text-primary">Pure Matcha</p>
-				<p class="text-sm text-muted-foreground">เมนูซิกเนเจอร์ ฿75</p>
-			</div>
+		<div class="relative flex items-center justify-center py-6">
+			<div class="absolute h-56 w-56 rounded-full bg-primary/15 blur-3xl md:h-72 md:w-72"></div>
+
+			<video
+				class="relative h-64 w-64 rounded-full object-cover shadow-xl shadow-primary/20 md:h-80 md:w-80"
+				src="/videos/maneki-neko.mp4"
+				autoplay
+				loop
+				muted
+				playsinline
+				aria-label="แมวกวักมาสคอตร้าน"
+			></video>
 		</div>
 	</div>
 </section>
