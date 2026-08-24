@@ -7,6 +7,7 @@
 	import Testimonials from '$lib/components/testimonials.svelte';
 	import Contact from '$lib/components/contact.svelte';
 	import Footer from '$lib/components/footer.svelte';
+	import BackToTop from '$lib/components/back-to-top.svelte';
 </script>
 
 <svelte:head>
@@ -23,3 +24,4 @@
 	<Contact />
 </main>
 <Footer />
+<BackToTop />
