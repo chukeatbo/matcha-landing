@@ -13,6 +13,13 @@
 			rating: 5
 		}
 	];
+
+	// Mask surnames for reviewer privacy (PDPA) — "สุพิชญา ปิ่นทิพย์" → "สุพิชญา ป."
+	function maskName(name: string) {
+		const parts = name.trim().split(/\s+/);
+		if (parts.length < 2) return name;
+		return `${parts[0]} ${parts[1][0]}.`;
+	}
 </script>
 
 <section id="reviews" class="bg-secondary/40 py-20 md:py-28">
@@ -46,7 +53,7 @@
 								{/each}
 							</div>
 							<span class="text-muted-foreground">·</span>
-							<span class="font-medium text-foreground">{review.name}</span>
+							<span class="font-medium text-foreground">{maskName(review.name)}</span>
 						</div>
 					</div>
 				</div>
