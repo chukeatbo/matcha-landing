@@ -42,7 +42,7 @@
 					<dd class="text-sm text-muted-foreground">มัทฉะแท้ ชงสดทุกแก้ว</dd>
 				</div>
 				<div>
-					<dt class="text-2xl font-bold text-primary md:text-3xl">4.9★</dt>
+					<dt class="text-2xl font-bold text-primary md:text-3xl">5.0 ★</dt>
 					<dd class="text-sm text-muted-foreground">คะแนนรีวิวลูกค้า</dd>
 				</div>
 			</dl>

@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { Badge } from '$lib/components/ui/badge';
 	import { Button } from '$lib/components/ui/button';
+	import CatGrumpy from '$lib/components/icons/cat-grumpy.svelte';
+	import CatHappy from '$lib/components/icons/cat-happy.svelte';
 
 	type FlavorScore = { label: string; value: number };
 
@@ -10,7 +12,6 @@
 		tags: string[];
 		profile: FlavorScore[];
 		description: string;
-		samplePrice: string;
 		upgradePrice: string;
 		soldOut?: boolean;
 		included?: boolean;
@@ -27,7 +28,6 @@
 				{ label: 'Aroma', value: 5 }
 			],
 			description: 'รสสัมผัสกลมกล่อม ขมอ่อนๆ ปิดท้ายด้วยกลิ่นหอมมัน เหมาะสำหรับทำเมนูลาเต้',
-			samplePrice: '19',
 			upgradePrice: '19'
 		},
 		{
@@ -40,7 +40,6 @@
 				{ label: 'Aroma', value: 4 }
 			],
 			description: 'กลิ่นควันอ่อนๆ ผสานความหอมดอกไม้ ให้รสสัมผัสสง่างามและมีเอกลักษณ์',
-			samplePrice: '15',
 			upgradePrice: '15'
 		},
 		{
@@ -53,7 +52,6 @@
 				{ label: 'Creaminess', value: 5 }
 			],
 			description: 'กลิ่นอัลมอนด์ เนื้อสัมผัสครีมมี่ อูมามิเต็มคำ',
-			samplePrice: '19',
 			upgradePrice: '19'
 		},
 		{
@@ -66,7 +64,6 @@
 				{ label: 'Balance', value: 4 }
 			],
 			description: 'ตัวเลือกมาตรฐานประจำร้าน รสกลมกล่อม สมดุลระหว่างมันและควันอ่อนๆ',
-			samplePrice: '0',
 			upgradePrice: '0',
 			included: true
 		},
@@ -76,7 +73,6 @@
 			tags: ['Floral notes', 'Rich umami', 'Very creamy'],
 			profile: [],
 			description: 'กลิ่นดอกไม้ อูมามิเข้มข้น เนื้อครีมมี่นุ่มละมุน',
-			samplePrice: '35',
 			upgradePrice: '35',
 			soldOut: true
 		},
@@ -90,7 +86,6 @@
 				{ label: 'Aroma', value: 5 }
 			],
 			description: 'รสมันเข้มและกลิ่นควันชัดเจน ปิดท้ายด้วยรสคั่วเข้ม เนื้อสัมผัสครีมมี่',
-			samplePrice: '55',
 			upgradePrice: '55'
 		}
 	];
@@ -118,10 +113,14 @@
 	<div class="container">
 		<div class="mx-auto max-w-2xl text-center">
 			<span class="text-sm font-semibold uppercase tracking-widest text-primary">ผงมัทฉะให้เลือก</span>
-			<h2 class="mt-3 text-3xl font-bold md:text-4xl">คัดสรรผงมัทฉะแท้</h2>
+			<h2 class="mt-3 flex items-center justify-center gap-3 text-3xl font-bold md:text-4xl">
+				<CatGrumpy class="h-8 w-8 shrink-0 md:h-9 md:w-9" />
+				คัดสรรผงมัทฉะแท้
+				<CatHappy class="h-8 w-8 shrink-0 md:h-9 md:w-9" />
+			</h2>
 			<p class="mt-4 text-muted-foreground">
 				เลือกผงมัทฉะที่ใช่ในสไตล์ที่คุณชอบ แต่ละตัวมี character และ flavor notes ที่แตกต่างกัน
-				สามารถลองชิมแบบ Sample 1g หรือเลือกเปลี่ยนเสมอผงมัทฉะในแก้วของคุณได้
+				เลือกเปลี่ยนผงมัทฉะในแก้วของคุณได้ตามใจชอบ
 			</p>
 		</div>
 
@@ -186,8 +185,7 @@
 									ตัวเลือกมาตรฐาน · รวมในราคาแล้ว
 								</Badge>
 							{:else}
-								<Button variant="outline" size="sm" class="flex-1">Sample 1g (฿{powder.samplePrice})</Button>
-								<Button size="sm" class="flex-1">Upgrade (+฿{powder.upgradePrice})</Button>
+								<Button size="sm" class="w-full">Upgrade (+฿{powder.upgradePrice})</Button>
 							{/if}
 						</div>
 					</div>

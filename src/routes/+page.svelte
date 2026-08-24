@@ -4,6 +4,7 @@
 	import About from '$lib/components/about.svelte';
 	import Menu from '$lib/components/menu.svelte';
 	import MatchaPowder from '$lib/components/matcha-powder.svelte';
+	import Testimonials from '$lib/components/testimonials.svelte';
 	import Contact from '$lib/components/contact.svelte';
 	import Footer from '$lib/components/footer.svelte';
 </script>
@@ -18,6 +19,7 @@
 	<About />
 	<Menu />
 	<MatchaPowder />
+	<Testimonials />
 	<Contact />
 </main>
 <Footer />

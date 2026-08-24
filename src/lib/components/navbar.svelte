@@ -7,14 +7,17 @@
 		{ href: '#about', label: 'เรื่องราวของเรา' },
 		{ href: '#menu', label: 'เมนู' },
 		{ href: '#matcha-powder', label: 'ผงมัทฉะ' },
+		{ href: '#reviews', label: 'รีวิว' },
 		{ href: '#contact', label: 'ติดต่อ & ที่ตั้ง' }
 	];
 </script>
 
 <header class="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur">
-	<div class="container flex h-16 items-center justify-between">
-		<a href="#top" class="flex items-center gap-2 font-serif text-lg font-semibold text-primary">
-			<img src="/logo.png" alt="T Cat Matcha House" class="h-10 w-10 rounded-full object-cover" />
+	<div class="container flex h-24 items-center justify-between">
+		<a href="#top" class="flex items-center gap-3 font-serif text-lg font-semibold text-primary">
+			<span class="h-20 w-20 shrink-0 overflow-hidden rounded-full">
+				<img src="/logo.png" alt="T Cat Matcha House" class="h-full w-full scale-125 object-cover" />
+			</span>
 			T Cat Matcha House
 		</a>
 
